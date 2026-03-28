@@ -1,0 +1,211 @@
+/* services page styles */
+
+
+.services {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+
+/* services page title */
+
+
+.servicesTitle {
+  font-size: 33px;
+  margin-bottom: 40px;
+}
+
+
+
+/* menu grid layout */
+
+
+.menuList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+
+
+/* food card styles */
+
+
+.foodCard {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+/* Hover animation */
+
+.foodCard:hover {
+  transform: translateY(-5px);
+}
+
+
+
+/* food card image */
+
+
+.foodCard img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+/* food text such as prices, name, discription, */
+
+
+.price {
+  font-weight: bold;
+  color: #3cff00;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+/* buttons in the card container */
+
+
+.cardButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+
+/* add to cart button that allow use to access their items */
+
+
+.cartBtn {
+  flex: 1;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cartBtn:hover {
+  background: #121831;
+}
+
+
+
+/* details button that show a use a discription of items */
+
+
+.detailsBtn {
+  flex: 1;
+  background: #121831;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.detailsBtn:hover {
+  background: #1d4ed8;
+}
+
+
+
+/* tablet screen responsive */
+
+
+@media (max-width:1024px) {
+
+  .services {
+    padding: 40px 15px;
+  }
+
+  .servicesTitle {
+    font-size: 24px;
+  }
+
+  .menuList {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+}
+
+
+/* mobile screen responsive */
+
+
+@media (max-width:768px) {
+
+  .services {
+    padding: 30px 10px;
+  }
+
+  .servicesTitle {
+    font-size: 20px;
+  }
+
+  .menuList {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .foodCard img {
+    height: 130px;
+  }
+
+}
+
+
+
+/* small screen responsive PHONES */
+
+
+@media (max-width:480px) {
+
+  .servicesTitle {
+    font-size: 22px;
+  }
+
+  .menuList {
+    grid-template-columns: 1fr;
+  }
+
+  .foodCard img {
+    height: 120px;
+  }
+
+}
+
+
+
+/* large screens responsives */
+
+
+@media (min-width:1400px) {
+
+  .menuList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}

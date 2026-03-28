@@ -1,0 +1,175 @@
+/* GLOBAL RESET
+   Removes browser default margin and padding
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* NAVBAR CONTAINER */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  font-family: sans-serif;
+
+  /* Sticky navbar stays visible while scrolling */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+.navbar .leftSide {
+  display: flex;
+  align-items: center;
+}
+
+
+/* LOGO STYLE */
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* "Uni" text styling */
+.logo .uni {
+  color: #333;
+}
+
+/* "Eats" text styling */
+.logo .eats {
+  color: #2563eb;
+}
+
+
+/* RIGHT SIDE NAVIGATION */
+
+.navbar .rightSide {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+/* NAVIGATION LINKS */
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+/* HOVER EFFECT */
+
+.navbar a:hover {
+  color: #2563eb;
+}
+
+
+/* CART ICON CONTAINER */
+
+.cart {
+  position: relative;
+}
+
+
+/* CART ITEM COUNT BADGE */
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+
+/* HAMBURGER BUTTON Hidden by default on desktop*/
+
+.navbar .rightSide button {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width:768px) {
+
+  /* Hide navigation links on mobile */
+  .navbar .rightSide a {
+    display: none;
+  }
+
+  /* Show hamburger menu button */
+  .navbar .rightSide button {
+    display: block;
+  }
+
+  .navbar .leftSide {
+    padding-left: 10px;
+  }
+
+}
+
+
+/* HIDDEN MOBILE MENU */
+
+.hiddenLinks {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  gap: 15px;
+}
+
+
+/* When menu is open */
+
+#open .hiddenLinks {
+  display: flex;
+}
+
+
+/* Mobile link styling */
+
+.hiddenLinks a {
+  font-size: 18px;
+}
+
+
+/* TABLET RESPONSIVE DESIGN */
+
+@media (max-width:1024px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+
+}

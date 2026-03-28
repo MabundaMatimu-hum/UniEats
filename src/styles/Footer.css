@@ -1,0 +1,141 @@
+/* GLOBAL RESET
+   Removes default browser spacing and ensures consistent layout behaviour.
+*/
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+/* FOOTER CONTAINER
+   Defines background colour, spacing, and typography.
+*/
+
+.footer{
+  background:#111;
+  color:white;
+  padding:40px 20px;
+  font-family:sans-serif;
+}
+
+
+/* FLEX LAYOUT
+   Flexbox is used to align footer sections horizontally.
+*/
+
+.footer{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:30px;
+}
+
+
+/* FOOTER SECTIONS
+   Each section occupies flexible width depending on screen size.
+*/
+
+.footer-section,
+.footer-sections{
+  flex:1;
+  min-width:200px;
+}
+
+
+/* SECTION TITLES */
+
+.footer h4{
+  margin-bottom:15px;
+  font-size:20px;
+}
+
+
+/* QUICK LINKS LIST */
+
+.footer-sections ul{
+  list-style:none;
+}
+
+.footer-sections ul li{
+  margin-bottom:10px;
+}
+
+
+/* QUICK LINKS STYLE */
+
+.footer-sections a{
+  text-decoration:none;
+  color:#ddd;
+  transition:0.3s;
+}
+
+
+/* LINK HOVER EFFECT */
+
+.footer-sections a:hover{
+  color:#2563eb;
+}
+
+
+/* SOCIAL MEDIA ICONS CONTAINER */
+
+.social-links{
+  display:flex;
+  gap:15px;
+  font-size:30px;
+  cursor:pointer;
+}
+
+
+/* HOVER EFFECT FOR SOCIAL ICONS */
+
+.social-links svg:hover{
+  color:#2563eb;
+}
+
+
+/* COPYRIGHT SECTION */
+
+.footer-bottom{
+  width:100%;
+  text-align:center;
+  border-top:1px solid #444;
+  padding-top:15px;
+  margin-top:20px;
+  font-size:14px;
+}
+
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width:768px){
+
+  .footer{
+    flex-direction:column; 
+    text-align:center;
+    align-items:center;
+  }
+
+  .footer-sections ul{
+    padding:0;
+  }
+
+  .social-links{
+    justify-content:center;
+  }
+
+}
+
+
+/* TABLET RESPONSIVE DESIGN */
+
+@media (max-width:1024px){
+
+  .footer{
+    padding:30px 20px;
+  }
+
+}

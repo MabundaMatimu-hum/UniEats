@@ -1,0 +1,207 @@
+
+/* blog page main layout */
+
+
+.Blog{
+  background-color:#f5f7fa;
+  min-height:100vh;
+  padding:60px 20px;
+  display:flex;
+  justify-content:center;
+}
+
+
+
+/* blog container */
+
+
+.container{
+  max-width:800px;
+  width:100%;
+  background:white;
+  padding:40px;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+
+
+/* blog tittle */
+
+
+.container h1{
+  font-size:32px;
+  margin-bottom:20px;
+  color:#222;
+  text-align:center;
+}
+
+
+
+/* blog meta infor */
+
+
+.blog-info{
+  text-align:center;
+  color:#888;
+  margin-bottom:25px;
+  font-size:14px;
+}
+
+
+
+/* blog paragraphy */
+
+
+.container p{
+  font-size:18px;
+  line-height:1.8;
+  color:#555;
+  margin-bottom:18px;
+}
+
+
+
+/* blog section card */
+
+
+.blogPage{
+  padding:60px 8%;
+  background:#f9f9f9;
+  font-family:sans-serif;
+}
+
+.blogTitle{
+  text-align:center;
+  font-size:40px;
+  margin-bottom:50px;
+}
+
+.blogContainer{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:40px;
+}
+
+.blogCard{
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.blogCard:hover{
+  transform:translateY(-6px);
+}
+
+.blogCard img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.blogContent{
+  padding:20px;
+}
+
+.blogContent h2{
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.blogContent p{
+  color:#444;
+  line-height:1.6;
+}
+
+
+
+/* table screen responsive */
+
+
+@media (max-width:1024px){
+
+  .blogTitle{
+    font-size:32px;
+  }
+
+  .container{
+    padding:35px;
+  }
+
+  .container h1{
+    font-size:28px;
+  }
+
+  .container p{
+    font-size:17px;
+  }
+
+}
+
+
+
+/* mobile screen responsive */
+
+
+@media (max-width:768px){
+
+  .Blog{
+    padding:40px 15px;
+  }
+
+  .blogPage{
+    padding:40px 5%;
+  }
+
+  .blogTitle{
+    font-size:28px;
+  }
+
+  .blogContainer{
+    grid-template-columns:1fr;
+  }
+
+  .container{
+    padding:25px;
+  }
+
+  .container h1{
+    font-size:24px;
+  }
+
+  .container p{
+    font-size:16px;
+  }
+
+}
+
+
+
+/* small screen responsive */
+
+
+@media (max-width:480px){
+
+  .blogTitle{
+    font-size:22px;
+  }
+
+  .container{
+    padding:20px;
+  }
+
+  .container h1{
+    font-size:20px;
+  }
+
+  .container p{
+    font-size:15px;
+  }
+
+  .blogCard img{
+    height:180px;
+  }
+
+}

@@ -1,0 +1,126 @@
+/* GLOBAL RESET
+   Removes default browser margins and padding to ensure consistent layout behaviour.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* HOME SECTION
+   Creates a full-screen hero section with a background image.
+*/
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+
+  /* Background image used as hero banner */
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+
+/* TEXT CONTAINER
+   Holds the title, description, and button.
+*/
+
+.headerContainer {
+  max-width: 900px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+/* MAIN TITLE */
+
+.headerContainer h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+
+/* PARAGRAPH TEXT */
+
+.headerContainer p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+
+/* BUTTON STYLE
+   Used for the main call-to-action button on the homepage.
+*/
+
+button {
+  background: #2563eb;
+  color: white;
+  border: 2px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+/* BUTTON HOVER EFFECT
+   Changes the colour when the user hovers over the button.
+*/
+
+button:hover {
+  background: #121831;
+}
+
+
+/* SMALL MOBILE DEVICES */
+
+@media (max-width:480px) {
+
+  .home {
+    padding: 20px;
+  }
+
+  .headerContainer h1 {
+    font-size: 28px;
+  }
+
+  .headerContainer p {
+    font-size: 15px;
+  }
+
+  .headerContainer button {
+    width: 100%;
+    max-width: 220px;
+  }
+
+}
+
+
+/* TABLET AND MOBILE DEVICES */
+
+@media (max-width:768px) {
+
+  .headerContainer h1 {
+    font-size: 36px;
+  }
+
+  .headerContainer p {
+    font-size: 16px;
+  }
+
+  .headerContainer button {
+    padding: 12px 28px;
+  }
+
+}

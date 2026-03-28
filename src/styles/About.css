@@ -1,0 +1,105 @@
+/* ABOUT PAGE MAIN CONTAINER
+   This section styles the main About page.
+   It ensures the page covers the full screen height and centers the content.
+*/
+
+.about {
+  background-color: #f5f7fa; 
+  min-height: 100vh; 
+  padding: 60px 20px; 
+  display: flex; 
+  justify-content: center; 
+  font-family: sans-serif; 
+}
+
+
+/* CONTENT CONTAINER
+   Controls the maximum width of the text to improve readability.
+*/
+
+.container{
+  max-width: 800px; 
+  width: 100%;
+  background: white; 
+  padding: 40px; 
+  border-radius: 10px; 
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08); 
+}
+
+
+/* PAGE TITLE
+   Styles the main heading of the About page.
+*/
+
+.about h1 {
+  font-size: 36px; 
+  margin-bottom: 25px; 
+  color: #222; 
+  text-align: center; 
+}
+
+
+/* PARAGRAPH TEXT 
+Styles the informational text displayed on the page.*/
+
+.about p {
+  font-size: 18px; 
+  line-height: 1.8; 
+  color: #555; 
+    margin-bottom: 18px; 
+}
+
+
+
+/* TABLET RESPONSIVE DESIGN Adjust layout and text size for tablet devices */
+
+@media (max-width: 1024px) {
+  .about {
+    padding: 50px 25px;
+  }
+
+  .about h1 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 17px;
+  }
+}
+
+
+/*  MOBILE RESPONSIVE DESIGN Optimizes layout for smartphones */
+
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 20px;
+    margin: 20px;
+  }
+
+  .about h1 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+
+
+
+/* SMALL PHONE SCREENS  Further adjusts font sizes for very small devices */
+
+@media (max-width: 480px) {
+  .about {
+    padding: 30px 15px;
+  }
+
+  .about h1 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+}
