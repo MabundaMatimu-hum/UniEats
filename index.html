@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UniEats</title>
-    <script type="module" crossorigin src="/UniEats/assets/index-D1cTP3Ig.js"></script>
-    <link rel="stylesheet" crossorigin href="/UniEats/assets/index-Dn2N5KCs.css">
-  </head>
-
-  <body>
-    <div id="root"></div>
-
-  </body>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>UniEats</title>
+  <script>
+    const path = window.location.pathname.replace('/UniEats', '');
+    window.location.href = `/UniEats/#${path}`;
+  </script>
+</head>
+<body>
+  Redirecting to UniEats...
+</body>
 </html>
