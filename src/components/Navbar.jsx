@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 // Import Material UI icons
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ReorderIcon from "@mui/icons-material/Reorder";
+import CloseIcon from "@mui/icons-material/Close";
 // Import CartContext to access cart items stored globally
 import { CartContext } from "../context/CartContext";
 // Import CSS styling for the navigation bar
@@ -55,6 +56,12 @@ function Navbar() {
           <Link to="/blog"> Blog</Link>
           <Link to="/contact"> Contact</Link>
 
+          {/* CART ICON FOR MOBILE MENU */}
+          <Link to="/cart" className="cart">
+            <ShoppingCartIcon />
+            <span className="cart-count">{totalItems}</span>
+          </Link>
+
         </div>
       </div>
 
@@ -84,9 +91,8 @@ function Navbar() {
 
         {/* Mobile hamburger menu button */}
         <button onClick={toggleNavbar}>
-          <ReorderIcon />
+          {openLinks ? <CloseIcon /> : <ReorderIcon />}
         </button>
-
       </div>
 
     </div>
