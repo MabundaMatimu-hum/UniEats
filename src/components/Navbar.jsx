@@ -50,14 +50,13 @@ function Navbar() {
         {/* Hidden navigation links used in mobile view */}
         <div className="hiddenLinks">
 
-          <Link to="/"> Home</Link>
-          <Link to="/about"> About</Link>
-          <Link to="/services"> Services</Link>
-          <Link to="/blog"> Blog</Link>
-          <Link to="/contact"> Contact</Link>
+          <Link to="/" onClick={() => setOpenLinks(false)}> Home</Link>
+          <Link to="/about" onClick={() => setOpenLinks(false)}> About</Link>
+          <Link to="/services" onClick={() => setOpenLinks(false)}> Services</Link>
+          <Link to="/blog" onClick={() => setOpenLinks(false)}> Blog</Link>
+          <Link to="/contact" onClick={() => setOpenLinks(false)}> Contact</Link>
 
-          {/* CART ICON FOR MOBILE MENU */}
-          <Link to="/cart" className="cart">
+          <Link to="/cart" className="cart" onClick={() => setOpenLinks(false)}>
             <ShoppingCartIcon />
             <span className="cart-count">{totalItems}</span>
           </Link>
